@@ -32,7 +32,7 @@ namespace MiniInternetMagazin.Controllers
                 {
                     context.Categories.Add(category);
                    if(context.SaveChanges()>0)
-                    return Ok("Успешно добавлен!");
+                    return RedirectToAction("SelectCategory");
                 }
             }
             catch(Exception ex)
@@ -59,7 +59,7 @@ namespace MiniInternetMagazin.Controllers
                         context.Categories.Remove(Categ);
                     }
                     if (context.SaveChanges()>0)
-                    return Ok("Успешно удален!");
+                        return RedirectToAction("SelectCategory");
                 }
             }
             catch(Exception ex)
@@ -87,7 +87,7 @@ namespace MiniInternetMagazin.Controllers
                         context.Categories.Update(Categ);
                     }
                     if (context.SaveChanges() > 0)
-                        return Ok("Успешно измененo");
+                        return RedirectToAction("SelectCategory");
                 }
             }
             catch (Exception ex)

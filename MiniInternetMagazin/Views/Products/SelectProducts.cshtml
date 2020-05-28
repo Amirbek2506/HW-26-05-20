@@ -3,11 +3,34 @@
     <meta name="viewport" content="width=device-width" />
 </head>
 <body>
+  
+        <div class="row">
+            <div class="col-md-6">
+                <form method="get" action="~/Products/SelectProducts">
+                    <select name="category" class="form-control">
+                        <option>
+                            Все
+                        </option>
+                        @foreach (var x in ViewBag.Categories)
+                        {
+                            <option>@x.CategoryName</option>
+                        }
+                    </select>
+                    <div class="col-md-6">
+                        <input type="submit" class="btn btn-primary" value="Перейти">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
     <table class="table table-bordered table-hover table-striped">
         <thead>
-            <tr>
+             <tr>
                 <th scope="col">Id</th>
-                <th scope="col">CategoryName</th>
+                <th scope="col">Имя продукт</th>
+                <th scope="col">Цена продукт</th>
+                <th scope="col">Категория продукт</th>
             </tr>
         </thead>
         <tbody>
@@ -15,12 +38,12 @@
             {
                 foreach (var product in Model)
                 {
-            <tr>
-                <td>@product.ProductId</td>
-                <td>@product.ProductName</td>
-                <td>@product.Price</td>
-                <td>@product.CategoryId</td>
-            </tr>
+                    <tr>
+                        <td>@product.ProductId</td>
+                        <td>@product.ProductName</td>
+                        <td>@product.Price</td>
+                        <td>@product.Category</td>
+                    </tr>
                 }
             }
             else

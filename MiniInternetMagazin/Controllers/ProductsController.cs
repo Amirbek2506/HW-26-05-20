@@ -11,16 +11,32 @@ namespace MiniInternetMagazin.Controllers
 {
     public class ProductsController : Controller
     {
-        public IActionResult SelectProducts()
+        public IActionResult SelectProducts(string category)
         {
             using (var context = new DataContext())
             {
-                return View(context.Products.ToList<Product>());
+                ViewBag.Categories = context.Categories.ToList<Category>();
+                var res = (from pr in context.Products
+                           join Categ in context.Categories on pr.CategoryId equals Categ.CategoryId
+                           select new ViewProduct { ProductName = pr.ProductName, ProductId = pr.ProductId, Price = pr.Price, Category = Categ.CategoryName }).ToList<ViewProduct>();
+
+                if (category == null || category=="Все")
+                 {
+                    return View(res);
+                }
+                else
+                {
+                    return View(res.Where(p => p.Category == category).ToList<ViewProduct>());
+                }
             }
         }
-        public ActionResult Create()
+        public IActionResult Create()
         {
-            return View();
+            using (var context = new DataContext())
+            {
+                ViewBag.Categories = context.Categories.ToList<Category>();
+                return View();
+            }
         }
 
         [HttpPost]
@@ -32,12 +48,12 @@ namespace MiniInternetMagazin.Controllers
                 {
                     context.Products.Add(product);
                     if (context.SaveChanges() > 0)
-                        return Ok("Успешно добавлен!");
+                        return RedirectToAction("SelectProducts");
                 }
             }
-            catch (Exception ex)
+            catch
             {
-                return View($"{ex.Message}");
+                return View();
             }
             return BadRequest("Не добавлен!");
         }
@@ -59,7 +75,7 @@ namespace MiniInternetMagazin.Controllers
                         context.Products.Remove(res);
                     }
                     if (context.SaveChanges() > 0)
-                        return Ok("Успешно удален!");
+                        return RedirectToAction("SelectProducts");
                 }
             }
             catch (Exception ex)
@@ -88,7 +104,7 @@ namespace MiniInternetMagazin.Controllers
                         context.Products.Update(res);
                     }
                     if (context.SaveChanges() > 0)
-                        return Ok("Успешно измененo");
+                        return RedirectToAction("SelectProducts");
                 }
             }
             catch (Exception ex)

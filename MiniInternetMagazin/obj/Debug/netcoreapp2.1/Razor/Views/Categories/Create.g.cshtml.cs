@@ -67,12 +67,12 @@ using MiniInternetMagazin.Models;
             WriteLiteral("<h4 class=\"text-info\">Добавить новая категория на таблицу</h4>\r\n");
             EndContext();
             BeginContext(173, 607, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "16927efd7db145e78d8168d628825fd9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ad054fda336a49fc9e3cf2606e5212af", async() => {
                 BeginContext(222, 182, true);
                 WriteLiteral("\r\n    <div class=\"row\">\r\n        <div class=\"col-md-6\">\r\n            <div class=\"input-group\">\r\n                <label for=\"CategoryName\">CategoryName</label><br />\r\n                ");
                 EndContext();
                 BeginContext(404, 95, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "92e80e626ea947b18aaa0e0437bbccea", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "ed366c86f65d418e80d7e83bfe1bb6c5", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();

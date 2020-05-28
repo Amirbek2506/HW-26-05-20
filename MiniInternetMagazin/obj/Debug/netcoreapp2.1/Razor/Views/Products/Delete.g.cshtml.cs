@@ -67,12 +67,12 @@ using MiniInternetMagazin.Models;
             WriteLiteral("<h4 class=\"text-info\">Удалить продукт по Id из таблицу</h4>\r\n");
             EndContext();
             BeginContext(169, 594, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a56c8751cfe947f485a4c9a9d206eb47", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4e753b332dea4489b23504011b3dc408", async() => {
                 BeginContext(216, 178, true);
                 WriteLiteral("\r\n    <div class=\"row\">\r\n        <div class=\"col-md-6\">\r\n            <div class=\"input-group\">\r\n                <label for=\"ProductId\">Id продукта</label><br />\r\n                ");
                 EndContext();
                 BeginContext(394, 89, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "bda05b5925624bb189e586fd4f2d52bc", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "bc212145b7dc46a99fe2527858ad829c", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
