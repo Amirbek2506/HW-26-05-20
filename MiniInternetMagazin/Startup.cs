@@ -50,7 +50,7 @@ namespace MiniInternetMagazin
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
+                app.UseExceptionHandler("");
                 app.UseHsts();
             }
 
@@ -62,7 +62,7 @@ namespace MiniInternetMagazin
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Products}/{action=SelectProducts}/{Id?}");
             });
         }
     }
