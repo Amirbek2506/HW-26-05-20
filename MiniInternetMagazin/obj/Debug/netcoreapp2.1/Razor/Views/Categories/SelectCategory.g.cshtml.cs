@@ -61,7 +61,7 @@ using MiniInternetMagazin.Models;
             WriteLiteral("\r\n    <html>\r\n    ");
             EndContext();
             BeginContext(18, 82, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0cd95b1976e9407a8e7cc24bca118ebb", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2306b3dde5454f97985601546a9b4bb3", async() => {
                 BeginContext(24, 69, true);
                 WriteLiteral("\r\n        <meta name=\"viewport\" content=\"width=device-width\" />\r\n    ");
                 EndContext();
@@ -81,7 +81,7 @@ using MiniInternetMagazin.Models;
             WriteLiteral("\r\n    ");
             EndContext();
             BeginContext(106, 1239, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ce0ee238e141413c9b51ba92a9b7c2c1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ea8633e874a42f686823b444e579bcd", async() => {
                 BeginContext(112, 283, true);
                 WriteLiteral(@"
         <table class=""table table-bordered table-hover table-striped"">
@@ -145,7 +145,7 @@ using MiniInternetMagazin.Models;
                 WriteLiteral("            </tbody>\r\n        </table>\r\n        ");
                 EndContext();
                 BeginContext(986, 109, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "04be8536155345bcbfdbf7f74632c225", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9f3bf3e96c24403dad7b612482151f8c", async() => {
                     BeginContext(1073, 18, true);
                     WriteLiteral("Добавить категория");
                     EndContext();
@@ -172,7 +172,7 @@ using MiniInternetMagazin.Models;
                 WriteLiteral("\r\n        ");
                 EndContext();
                 BeginContext(1105, 108, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1ba33fb73c06488fad9429742d34f413", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "50e2370fbb4846c9b54f74aca2a83a22", async() => {
                     BeginContext(1192, 17, true);
                     WriteLiteral("Удалить категория");
                     EndContext();
@@ -199,7 +199,7 @@ using MiniInternetMagazin.Models;
                 WriteLiteral("\r\n        ");
                 EndContext();
                 BeginContext(1223, 109, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0b2b572e820c4ff6b5680cec1fe1e687", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "563f32a908584d0582f2be61baeafa75", async() => {
                     BeginContext(1310, 18, true);
                     WriteLiteral("Изменить категория");
                     EndContext();

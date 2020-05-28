@@ -3,11 +3,8 @@
     <meta name="viewport" content="width=device-width" />
 </head>
 <body>
-  
-        <div class="row">
-            <div class="col-md-6">
                 <form method="get" action="~/Products/SelectProducts">
-                    <select name="category" class="form-control">
+                    <select name="category" class="form-control-static">
                         <option>
                             Все
                         </option>
@@ -16,13 +13,8 @@
                             <option>@x.CategoryName</option>
                         }
                     </select>
-                    <div class="col-md-6">
-                        <input type="submit" class="btn btn-primary" value="Перейти">
-                    </div>
+                        <input type="submit" class="btn-success" value="Перейти">
                 </form>
-            </div>
-        </div>
-
 
     <table class="table table-bordered table-hover table-striped">
         <thead>

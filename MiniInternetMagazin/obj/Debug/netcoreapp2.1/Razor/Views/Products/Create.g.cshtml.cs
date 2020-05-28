@@ -70,7 +70,7 @@ using MiniInternetMagazin.Models;
             WriteLiteral("<h4 class=\"text-info\">Добавить новый продукт</h4>\r\n");
             EndContext();
             BeginContext(159, 1344, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "438e6ca823b04c428971aa2af16ade71", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "06475aca37df4642ab0997c58ab3fc53", async() => {
                 BeginContext(206, 118, true);
                 WriteLiteral("\r\n    <div class=\"row\">\r\n        <div class=\"col-md-6\">\r\n            <select name=\"CategoryId\" class=\"form-control\">\r\n");
                 EndContext();
@@ -84,7 +84,7 @@ using MiniInternetMagazin.Models;
                 WriteLiteral("                    ");
                 EndContext();
                 BeginContext(419, 54, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "897ce3a9e3274a4db5472e69686be60e", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d1f9aeb2fefa46bdb8939402e71082f9", async() => {
                     BeginContext(450, 14, false);
 #line 12 "D:\projects\HW-26-05-20\MiniInternetMagazin\MiniInternetMagazin\Views\Products\Create.cshtml"
                                              Write(x.CategoryName);
@@ -125,7 +125,7 @@ using MiniInternetMagazin.Models;
                 WriteLiteral("            </select>\r\n        </div>\r\n        </div>\r\n        <div class=\"row\">\r\n            <div class=\"col-md-6\">\r\n                <div class=\"input-group\">\r\n                    <label for=\"ProductName\">Имя продукт</label><br />\r\n                    ");
                 EndContext();
                 BeginContext(747, 92, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "9b0ecfdd9bc949bfaae6a94aed5bbeb5", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "8ab0b52963ab46f891fce781549e7aff", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
@@ -152,7 +152,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
                 WriteLiteral("\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"row\">\r\n            <div class=\"col-md-6\">\r\n                <div class=\"input-group\">\r\n                    <label for=\"Price\">Цена</label><br />\r\n                    ");
                 EndContext();
                 BeginContext(1086, 96, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "d389b951be2a4ac786ea3069cdd53ef1", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "96b69356b12949e0ae893f43e22f3482", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
